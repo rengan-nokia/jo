@@ -39,7 +39,6 @@ package: build
 		--verbose \
 		--name "$(NAME)" \
 		--version "$(VERSION)" \
-		--maintainer "R.Rajasekar <r.1.rajasekar@nokia.com>" \
 		--vendor "Jan-Piet Mens <http://jpmens.net>" \
 		--license "GPL" \
 		--url "https://github.com/jpmens/jo" \
