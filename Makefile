@@ -32,10 +32,10 @@ build: $(TARBALL)
 	autoreconf -i; \
 	./configure; \
 	$(MAKE) check; \
-	$(MAKE) DESTDIR=../$(DESTDIR) install;
+	$(MAKE) DESTDIR=$(DESTDIR) install;
 
 package: build
-	fpm -s dir -t $(PKGTYPE) -C "$(DESTDIR)" \
+	fpm -s dir -t $(PKGTYPE) -C "$(DESTDIR)\build" \
 		--verbose \
 		--name "$(NAME)" \
 		--version "$(VERSION)" \
