@@ -7,6 +7,7 @@ pipeline {
                 echo 'Checkout source from github....'
                 checkout scm
                 sh "ls -lat"
+                sh 'printenv'
             }
         }
         
