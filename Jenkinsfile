@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Checkout source from github....'
                 checkout scm
+                sh "ls -lat"
             }
         }
         
