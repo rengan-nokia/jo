@@ -35,7 +35,7 @@ build: $(TARBALL)
 	$(MAKE) DESTDIR=$(DESTDIR) install;
 
 package: build
-	fpm -s dir -t $(PKGTYPE) -C "$(DESTDIR)/build" \
+	/usr/local/rvm/gems/ruby-2.4.1/bin/fpm -s dir -t $(PKGTYPE) -C "$(DESTDIR)/build" \
 		--verbose \
 		--name "$(NAME)" \
 		--version "$(VERSION)" \
